@@ -13,12 +13,12 @@
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with minefield.  If not, see <http://www.gnu.org/licenses/>.
+# along with goldfisch.  If not, see <http://www.gnu.org/licenses/>.
 
 CC = gcc
-CFLAGS = -Wall -Wextra -std=gnu11
+CFLAGS = -ggdb -Wall -Wextra -std=gnu11
 
-SRC = src/main.c
+SRC = color.h game.c main.c
 OBJ = $(SRC:.c=.o)
 EXEC = goldfisch
 

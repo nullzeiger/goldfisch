@@ -1,5 +1,5 @@
 /*
-   main.c Entry point
+   goldfisch Simple simulation of a goldfisch living in the terminal.
 
    This file is part of goldfisch.
 
@@ -16,14 +16,15 @@
    GNU General Public License for more details.
 
    You should have received a copy of the GNU General Public License
-   along with minefield.  If not, see <http://www.gnu.org/licenses/>.
+   along with goldfisch.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #include <stdio.h>
+#include "game.h"
 
 int main(void)
 {
-	puts("Hello, World");
+	exec();
 
 	return 0;
 }

@@ -22,7 +22,7 @@
 
 /* Define constant for goldfisch */
 #define GOLDFISCH "<°v><"
-/* Define constant for goldfisch */
+/* Define constant for goldfisch died */
 #define GOLDFISCHDIED "<xx><"
 
 /* Run simulation */

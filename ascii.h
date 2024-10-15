@@ -14,27 +14,15 @@
    GNU General Public License for more details.
 
    You should have received a copy of the GNU General Public License
-   along with goldfisch.  If not, see <http://www.gnu.org/licenses/>.
+   along with minefield.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include <stdio.h>
-#include "ascii.h"
-#include "color.h"
-#include "game.h"
+#ifndef ASCII_H
+#define ASCII_H
 
-void print_goldfisch(void)
-{
-	printf("%s%s%s\n", RED, GOLDFISCH, RESET);
-}
+/* Define constant for goldfisch */
+#define GOLDFISCH "<°v><"
+/* Define constant for goldfisch died */
+#define GOLDFISCHDIED "<xx><"
 
-void print_goldfisch_died(void)
-{
-
-	printf("%s%s%s\n", RED, GOLDFISCHDIED, RESET);
-}
-
-int exec(void)
-{
-	print_goldfisch();
-	return 0;
-}
+#endif // ASCII_H

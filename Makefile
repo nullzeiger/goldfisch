@@ -16,9 +16,9 @@
 # along with goldfisch.  If not, see <http://www.gnu.org/licenses/>.
 
 CC = gcc
-CFLAGS = -ggdb -Wall -Wextra -std=gnu11
+CFLAGS = -ggdb -Wall -Wextra
 
-SRC = color.h game.c main.c
+SRC = game.c goldfisch.c
 OBJ = $(SRC:.c=.o)
 EXEC = goldfisch
 

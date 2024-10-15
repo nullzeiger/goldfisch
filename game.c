@@ -22,19 +22,34 @@
 #include "color.h"
 #include "game.h"
 
+/* Function to clear the terminal screen */
+void clear_terminal(void)
+{
+	/* Print escape sequences to clear screen
+	 * and move cursor to home position */
+	printf("\033[3J\033[H\033[2J");
+}
+
+/* Function to print a gold fish graphic */
 void print_goldfisch(void)
 {
+	/* Print the GOLDFISCH macro in red color,
+	 * followed by a reset sequence */
 	printf("%s%s%s\n", RED, GOLDFISCH, RESET);
 }
 
+/* Function to print a gold fish died graphic */
 void print_goldfisch_died(void)
 {
-
+	/* Print the GOLDFISHDIED macro in red color,
+	 * followed by a reset sequence */
 	printf("%s%s%s\n", RED, GOLDFISCHDIED, RESET);
 }
 
+/* Function to execute the game */
 int exec(void)
 {
+	clear_terminal();
 	print_goldfisch();
 	return 0;
 }

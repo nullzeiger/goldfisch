@@ -21,10 +21,12 @@
 #define COLOR_H
 
 /* Define constant variables for colored text output */
-#define RESET "\033[0m"  // Resets text formatting to default
+#define RESET "\033[0m"   // Resets text formatting to default
 #define RED "\033[31m"    // Sets text color to red
 #define GREEN "\033[32m"  // Sets text color to green
 #define YELLOW "\033[33m" // Sets text color to yellow
 #define BLUE "\033[34m"   // Sets text color to blue
+#define MAGENTA "\33[35m"  // Sets text color to magenta
+
 
 #endif // COLOR_H

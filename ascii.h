@@ -24,5 +24,9 @@
 #define GOLDFISCH "<°v><"
 /* Define constant for goldfisch died */
 #define GOLDFISCHDIED "<xx><"
+/* Define constant for food*/
+#define FOOD "#"
+
+#define GNAMGNAM "Gnam Gnam"
 
 #endif // ASCII_H

@@ -35,7 +35,7 @@ void print_goldfisch(void)
 {
 	/* Print the GOLDFISCH macro in red color,
 	 * followed by a reset sequence */
-	printf("%s%s%s\n", RED, GOLDFISCH, RESET);
+	printf("%s%s%s", RED, GOLDFISCH, RESET);
 }
 
 /* Function to print a gold fish died graphic */
@@ -43,13 +43,33 @@ void print_goldfisch_died(void)
 {
 	/* Print the GOLDFISHDIED macro in red color,
 	 * followed by a reset sequence */
-	printf("%s%s%s\n", RED, GOLDFISCHDIED, RESET);
+	printf("%s%s%s", RED, GOLDFISCHDIED, RESET);
+}
+
+/* Function to print a food graphic */
+void print_food(void)
+{
+	/* Print the FOOD macro in yellow color,
+	 * followed by a reset sequence */
+	printf("%s%s%s", YELLOW, FOOD, RESET);
+}
+
+/* Function to print a "Gnam Gnam" message */
+void print_gnam_gnam(void)
+{
+	/* Print the GNAMGNAM macro in magenta color,
+	 * followed by a reset sequence */
+	printf("%s%s%s", MAGENTA, GNAMGNAM, RESET);
 }
 
 /* Function to execute the game */
 int exec(void)
 {
 	clear_terminal();
+	print_gnam_gnam();
+	print_food();
 	print_goldfisch();
+	printf("\n");
+
 	return 0;
 }
